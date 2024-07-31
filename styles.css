@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#header input {
+    padding: 8px;
+    margin-right: 10px;
+    width: calc(100% - 100px);
+}
+
+#header button {
+    padding: 8px;
+}
+
+#reset-users {
+    margin: 1rem 0 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+input.editable {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+
+button.remove {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button.remove:hover {
+    background: darkred;
+}
+
+button.save {
+    background: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button.save:hover {
+    background: darkgreen;
+}
+
+button {
+    margin: .2rem 0 .2rem 0;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#name-sort-icon::after,
+#username-sort-icon::after {
+    content: '▲';
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#name-sort-icon.desc::after,
+#username-sort-icon.desc::after {
+    content: '▼';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

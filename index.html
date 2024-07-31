@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+    <h1>Users List</h1>
+    <button id="reset-users">Reset cached users</button>
+    <button id="delete-selected" disabled>Delete Selected</button>
+    <div id="header">
+        <input type="text" id="user-name" placeholder="Name" />
+        <input type="text" id="user-username" placeholder="Username" />
+        <input type="text" id="user-email" placeholder="Email" />
+        <input type="text" id="user-website" placeholder="Website" />
+        <button id="add-user">Add</button>
+    </div>
+    <table id="user-table">
+        <thead>
+        <tr>
+            <th><input type="checkbox" id="select-all" /></th>
+            <th><a href="#" id="sort-name">Name <span id="name-sort-icon"></span></a></th>
+            <th><a href="#" id="sort-username">Username <span id="username-sort-icon"></span></a></th>
+            <th>Email</th>
+            <th>Website</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="user-list"></tbody>
+    </table>
+</div>
+
+<div id="user-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>User Details</h2>
+        <div id="modal-details"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
